@@ -1,0 +1,31 @@
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+body {
+  transition: background-color 0.5s ease-in-out;
+}
+h1 {
+  color: #d195ff;
+  transition: color 0.5s ease-in-out;
+}
+
+.clicked {
+  color: #ff9999;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.first_color {
+  color: #ff9999;
+  /* background-color: #ff9999; */
+}
+.second_color {
+  color: #d195ff;
+}
