@@ -1,5 +1,4 @@
 const title = document.querySelector("#title"),
-  body = document.querySelector("body"),
   clock = document.querySelector(".js-title");
 
 const CLICKED_CLASS = "clicked",
