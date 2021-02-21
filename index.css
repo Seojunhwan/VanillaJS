@@ -1,4 +1,4 @@
-.form,
+.name-input,
 .greetings {
   display: none;
 }
@@ -6,10 +6,35 @@
 .showing {
   display: block;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 50px;
+}
 body {
   transition: background-color 0.5s ease-in-out;
   background-color: wheat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+#title {
+  margin-top: 0px;
+}
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   color: #d195ff;
   transition: color 0.5s ease-in-out;
@@ -21,6 +46,10 @@ h1 {
 
 .btn {
   cursor: pointer;
+}
+
+.greetings {
+  font-size: 35px;
 }
 
 .first_color {
@@ -42,10 +71,120 @@ h1 {
 
 .bgImage {
   position: absolute;
-  top: 10;
-  left: 10;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+  opacity: 0.7;
+}
+
+body {
+  font-family: sans-serif;
+  /* background-color: #ff9999; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 20px;
+  width: 600px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+  outline: none;
+  border: 0px;
+  transition: all 0.2s ease-in-out;
+}
+.name-input input:focus,
+.todo-input input:focus {
+  padding: 20px 10px;
+  font-size: 50px;
+}
+
+li span {
+  font-size: 20px;
+  width: 200px;
+}
+
+li {
+  transition: box-shadow 0.2s ease-in-out;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+li:hover {
+  box-shadow: 0px 1px 5px -3px black;
+}
+.todo-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.todo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  align-items: flex-start;
+}
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 450px;
+  margin: 0px 40px;
+  border-radius: 25px;
+  padding: 30px 0px;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.todo-container:hover {
+  background-color: white;
+  box-shadow: 0px 1px 10px -7px black;
+}
+.todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-container button {
+  background-color: inherit;
+  border: none;
+  border-radius: 10px;
+  margin: 0px 5px;
+  padding: 3px 10px;
+  font-size: 25px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.todo-container button:focus {
+  outline: none;
+}
+
+.del-btn:hover {
+  background-color: #ff4040;
+}
+.fin-btn:hover {
+  background-color: #a5d610;
+}
+.undo-btn:hover {
+  background-color: #b8bfc2;
+}
+
+.hide {
+  display: none;
+}
+.active {
+  display: inline-block;
 }

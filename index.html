@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Somthing</title>
+    <title>Momontom</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1 id="title" class="btn">gimotititi</h1>
-    <div class="js-clock">
-      <h1 class="js-title"></h1>
-    </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
+    <main>
+      <div class="titleBox">
+        <h1 id="title" class="btn">Momontom</h1>
+        <div class="js-clock">
+          <h1 class="js-title"></h1>
+        </div>
+      </div>
+      <form class="js-form name-input">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h4 class="js-greetings greetings"></h4>
+      <div class="todo-input">
+        <form class="js-toDoForm">
+          <input type="text" placeholder="Add task" />
+        </form>
+      </div>
+      <div class="todo">
+        <div class="todo-container">
+          <h2>Pending</h2>
+          <ul class="todo-list js-pendingList"></ul>
+        </div>
+        <div class="todo-container">
+          <h2>Finished</h2>
+          <ul class="todo-list js-finishedList"></ul>
+        </div>
+      </div>
+      <span class="js-weather"></span>
+    </main>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>
